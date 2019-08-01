@@ -28,7 +28,7 @@
   for(var i = 1; i <= 5; i++) {
 
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'mp3s/' + i + '.mp3');
+    audioElement.setAttribute('src', 'assets/media/' + i + '.mp3');
     audio.push(audioElement);
 
   }

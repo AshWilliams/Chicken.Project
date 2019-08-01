@@ -1,0 +1,3 @@
+FROM trafex/alpine-nginx-php7
+COPY . /usr/share/nginx/html
+EXPOSE 80
