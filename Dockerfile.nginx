@@ -1,3 +1,4 @@
 FROM trafex/alpine-nginx-php7
+COPY . /var/www/html
 COPY . /usr/share/nginx/html
 EXPOSE 8080
