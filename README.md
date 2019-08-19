@@ -7,4 +7,4 @@
 > docker run -it -p 8080:8080 ashwilliams/chicken-nginx    
 
 > docker run -it -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts    
-> docker exec -it  -u root b06577b59991 bash
+> docker exec -it  -u root <container-id> bash
