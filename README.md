@@ -10,7 +10,7 @@
 > docker exec -it  -u root `<container-id>` bash
 
 > minikube start --vm-driver=none --extra-config=kubeadm.ignore-preflight-errors=SystemVerification    
-> minikube tunnel
+> minikube tunnel    
 > kubectl apply -f chicken-project.yaml --validate=false
 
 > kubectl scale deployment.v1.apps/chicken-project --replicas=4
