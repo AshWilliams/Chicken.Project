@@ -6,7 +6,7 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 80
   selector:
     app: chicken-project
 ---
@@ -28,4 +28,4 @@ spec:
       - name: report-service
         image: ashwilliams/chicken-apache:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
