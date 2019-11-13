@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: chicken-project
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: chicken-project
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chicken-project
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: chicken-project
+  template:
+    metadata:
+      labels:
+        app: chicken-project
+    spec:
+      containers:
+      - name: report-service
+        image: ashwilliams/chicken-apache:latest
+        ports:
+        - containerPort: 8080
