@@ -9,7 +9,7 @@
 > docker run -it -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts    
 > docker exec -it  -u root `<container-id>` bash
 
-> minikube start --vm-driver=none --extra-config=kubeadm.ignore-preflight-errors=SystemVerification
+> minikube start --vm-driver=none --extra-config=kubeadm.ignore-preflight-errors=SystemVerification    
 > minikube tunnel
 > kubectl apply -f chicken-project.yaml --validate=false
 
