@@ -8,7 +8,7 @@
 <body>
   <?php 
     echo "Chicken Project Running on:";
-    echo $_SERVER['SERVER_SOFTWARE']; 
+    echo $_SERVER['SERVER_SOFTWARE'].", Hostname: ".gethostname().", IP: ".$_SERVER['SERVER_ADDR']; 
   ?>
   <div class="content">
       <!--Clouds in the sky-->
